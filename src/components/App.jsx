@@ -5,7 +5,6 @@ import Note from "./Note";
 import CreateArea from "./CreateArea";
 
 function App() {
-  
     function useStickyState(defaultValue, key) {
         const [value, setValue] = useState(() => {
             const stickyValue = window.localStorage.getItem(key);
@@ -17,7 +16,8 @@ function App() {
 
         useEffect(() => {
             window.localStorage.setItem(key, JSON.stringify(value));
-        }, [value, setValue]);
+            // eslint-disable-next-line react-hooks/exhaustive-deps
+        }, [value, setValue]); // eslint-disable-next-line react-hooks/exhaustive-deps
 
         return [value, setValue];
     }
