@@ -3,7 +3,7 @@
 
 This project was made as a part of Angela Yu's Web Development course on Udemy.
 
-![App Screenshot](screenshot.png)
+![App Screenshot](Screenshot.png)
 
 ### User Stories
 ---
